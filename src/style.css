@@ -1,0 +1,33 @@
+body {
+    font-family: monospace;
+    background-color: lightgray;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.header {
+    color: cadetblue;
+}
+
+input {
+    width: 50%;
+    margin-right: 10px;
+}
+
+img {
+    margin-top: 10px;
+    border: 2px solid cadetblue;
+    border-radius: 50%;
+}
+
+footer {
+    margin: 30px 0;
+    color: cadetblue;
+    font-weight: bold;
+}
+
