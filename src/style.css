@@ -17,6 +17,18 @@ h1 {
 input {
     width: 50%;
     margin-right: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid cadetblue;
+
+}
+
+button {
+    border-radius: 10%;
+    color: cadetblue;
+    font-weight: bold;
+    outline: none;
 }
 
 img {
