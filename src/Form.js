@@ -1,10 +1,17 @@
 import React from 'react'
 
 function Form(props) {
+
+    const handleVisibility = () => {
+        let info = document.querySelectorAll('.info')
+        info.forEach(element => {
+            element.classList.remove('info')
+        });
+    }
+
     return (
         <form 
             onSubmit={props.getWeather}
-            onClick={props.isVisible} 
             className="console">
             <input 
                 onFocus={props.clearText}
@@ -12,7 +19,7 @@ function Form(props) {
                 type="text"
                 placeholder=" search city for weather info"
             />
-            <button>SEARCH</button>
+            <button onClick={handleVisibility}>SEARCH</button>
         </form>
 
     )

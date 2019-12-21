@@ -12,6 +12,7 @@ function App() {
 
   const api = 'http://api.openweathermap.org/data/2.5/weather?q='
   const key = '95e94eae366bd6d895f5424258602103'
+
   const fetchData = async e  => {
       e.preventDefault() 
       const response = await fetch(`${api}${city}&appid=${key}`)
@@ -34,7 +35,7 @@ function App() {
         clearText={e => e.target.value = ''}
         getWeather={fetchData} 
         getCity={event => setCity(event.target.value)} 
-      />
+        />
       <Main 
         city={weather.city}
         icon={weather.icon}
@@ -42,7 +43,6 @@ function App() {
         description={weather.description}
         latitude={weather.latitude}
         longitude={weather.longitude}
-        
       />
       <Footer />
     </div>

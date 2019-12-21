@@ -10,6 +10,7 @@ function Main(props) {
             <h2>{props.temperature}&deg;</h2>
             <p>{props.description}</p>
             <p>lat {props.latitude}  -  lon {props.longitude}</p>
+            
         </div>
     )
 }

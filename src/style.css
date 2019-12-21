@@ -43,3 +43,6 @@ footer {
     font-weight: bold;
 }
 
+.info {
+    visibility: hidden;
+}
